@@ -67,6 +67,11 @@ defmodule BooksApiWeb.AuthorControllerTest do
                "lastname" => "some updated lastname"
              } = json_response(conn, 200)["data"]
     end
+
+    test "renders errors when data is invalid", %{conn: conn, author: author} do
+      conn = put(conn, Routes.author_path(conn, :update, author), author: @invalid_attrs)
+      assert json_response(conn, 400) != %{}
+    end
   end
 
   describe "delete author" do
