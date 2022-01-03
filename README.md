@@ -6,7 +6,7 @@ To start your Phoenix server:
   * Create and migrate your database with `mix ecto.setup`
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Now you can visit [`localhost:4000`](http://localhost:4000).
 
 # Guidelines
 Use the Phoenix framework to build an API REST to manage (create, edit, delete) Books and Authors database with Ecto, partial authentication using HTTP auth-basic capabilities against the database, and error management.
